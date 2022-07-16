@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function CoursesList () {
   return (
@@ -18,9 +19,7 @@ const Courses = (props) => {
           <div class="courses-wrapper">
             <div class="header">
               <div class="courses-header">
-                <h2 class="title">
-                  {props.title}
-                </h2>
+                <h2 class="title">{props.title}</h2>
               </div>
             </div>
 
@@ -29,11 +28,11 @@ const Courses = (props) => {
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="card course-card">
-                      <a href="#" class="course-card--front">
+                      <Link to="/" class="course-card--front">
                         <div class="card-image">
                           <img
                             src="https://cdn.inflearn.com/public/course-325982-cover/8b120ba4-43ce-4e16-b26e-53d3231867d2"
-                            alt="image"
+                            alt="퍼블리셔"
                           />
                         </div>
                         <div class="card-detail">
@@ -140,7 +139,7 @@ const Courses = (props) => {
                             <span class="tag">+300명</span>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                       <div class="course-card--back"></div>
                     </div>
                   </div>
