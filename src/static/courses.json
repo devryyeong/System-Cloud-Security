@@ -1,0 +1,12 @@
+{
+  "courses" : [
+    {
+      "id": 0,
+      "src": "https://cdn.inflearn.com/public/course-325982-cover/8b120ba4-43ce-4e16-b26e-53d3231867d2",
+      "title": "퍼블리셔 취업 진짜 실전 가이드",
+      "instructor": "코딩웍스(Coding Works)",
+      "price": "₩35,200",
+      "tags": "+300명"
+    }
+  ]
+}

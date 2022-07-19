@@ -1,21 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SearchBar = () => {
   return (
     <div>
       {/* 검색창 */}
-      <section class="search">
-        <div class="container">
-          <div class="search-wrapper">
-            <h2 class="search-title title">인프런에서 가치를 높이세요</h2>
-            <div class="search-box">
+      <section className="search">
+        <div className="container">
+          <div className="search-wrapper">
+            <h2 className="search-title title">인프런에서 가치를 높이세요</h2>
+            <div className="search-box">
               <input
                 type="text"
                 placeholder="배우고 싶은 지식을 입력해보세요."
               />
 
-              <span class="search-submit icon">
-                <i class="fas fa-search"></i>
+              <span className="search-submit icon">
+                <i className="fas fa-search"></i>
               </span>
             </div>
           </div>
@@ -23,37 +24,37 @@ const SearchBar = () => {
       </section>
 
     {/* 인기태그 */}
-      <section class="popular-tags">
-        <ul class="container popular-tags__wrapper">
-          <li class="popular-tags__tag-item">
-            <a href="#">#MVC</a>
+      <section className="popular-tags">
+        <ul className="container popular-tags__wrapper">
+          <li className="popular-tags__tag-item">
+            <Link to="/">#MVC</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Spring Boot</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Spring Boot</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Back-End</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Back-End</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#JPA</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#JPA</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Front-End</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Front-End</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Python</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Python</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Java</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Java</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#Spring</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#Spring</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#게임개발</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#게임개발</Link>
           </li>
-          <li class="popular-tags__tag-item">
-            <a href="#">#JavaScript</a>
+          <li className="popular-tags__tag-item">
+            <Link to="/">#JavaScript</Link>
           </li>
         </ul>
       </section>

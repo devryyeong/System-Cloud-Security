@@ -1,29 +1,25 @@
 import React from 'react';
-import Header from '../components/Header';
 import RoadmapCard from '../components/RoadmapCard';
-import Footer from '../components/Footer';
 import '../styles/roadmap.css';
 
 const Roadmap = (props) => {
   return (
     <div>
-      <Header />
-
       <main>
         {/* HERO (로드맵 배너) */}
-        <section class="roadmap-list">
-          <div class="roadmap-hero">
-            <h1 class="hero-title">시작부터 실전까지. 로드맵</h1>
-            <p class="hero-detail">
+        <section className="roadmap-list">
+          <div className="roadmap-hero">
+            <h1 className="hero-title">시작부터 실전까지. 로드맵</h1>
+            <p className="hero-detail">
               잘 설계된 로드맵을 따라 효율적으로 강의를 학습하세요.
             </p>
-            <p class="hero-detail">
+            <p className="hero-detail">
               좋은 로드맵을 다른 사람과 공유하고 함께 들어요.
             </p>
-            <div class="search-box-container">
-              <div class="search-box-wrapper">
-                <div class="search-box">
-                  <div class="select">
+            <div className="search-box-container">
+              <div className="search-box-wrapper">
+                <div className="search-box">
+                  <div className="select">
                     <select>
                       <option value="title">제목</option>
                       <option value="title">본문</option>
@@ -34,34 +30,34 @@ const Roadmap = (props) => {
                     type="text"
                     placeholder="학습 관련 스킬/로드맵 이름/강사명 검색하기"
                   />
-                  <button class="btn is-rounded">검색</button>
+                  <button className="btn is-rounded">검색</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <div class="container">
-          <div class="content-wrapper">
-            <div class="sort-buttons">
-              <div class="buttons-container">
+        <div className="container">
+          <div className="content-wrapper">
+            <div className="sort-buttons">
+              <div className="buttons-container">
                 <button>
-                  <span class="icon">
-                    <i class="fas fa-border-all"></i>
+                  <span className="icon">
+                    <i className="fas fa-border-all"></i>
                   </span>
                 </button>
                 <button>
-                  <span class="icon">
-                    <i class="fas fa-bars"></i>
+                  <span className="icon">
+                    <i className="fas fa-bars"></i>
                   </span>
                 </button>
               </div>
             </div>
 
-            <div class="main-panel">
-              <div class="panel-left">
-                <div class="sticky">
-                  <div class="select sort-options">
+            <div className="main-panel">
+              <div className="panel-left">
+                <div className="sticky">
+                  <div className="select sort-options">
                     <select data-type="order">
                       <option value="seq">추천수</option>
                       <option value="enr">학생수순</option>
@@ -72,62 +68,62 @@ const Roadmap = (props) => {
                     </select>
                   </div>
 
-                  <div class="accordions checkbox-accordions">
-                    <div class="accordion">
-                      <div class="accordion-header toggle">분야별</div>
+                  <div className="accordions checkbox-accordions">
+                    <div className="accordion">
+                      <div className="accordion-header toggle">분야별</div>
 
-                      <div class="accordion-body">
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                      <div className="accordion-body">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="1" />
                             <label for="1"> 개발 · 프로그래밍 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="2" />
                             <label for="2"> 보안 · 네트워크 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="3" />
                             <label for="3"> 데이터 사이언스 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="4" />
                             <label for="4"> 크리에이티브 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="5" />
                             <label for="5"> 직무 · 마케팅 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="6" />
                             <label for="6"> 학문 · 외국어 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="7" />
                             <label for="7"> 커리어 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="8" />
                             <label for="8">교양</label>
                           </div>
@@ -135,19 +131,19 @@ const Roadmap = (props) => {
                       </div>
                     </div>
 
-                    <div class="accordion">
-                      <div class="accordion-header toggle">로드맵</div>
+                    <div className="accordion">
+                      <div className="accordion-header toggle">로드맵</div>
 
-                      <div class="accordion-body">
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                      <div className="accordion-body">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="2" />
                             <label for="2"> 미참여 로드맵 </label>
                           </div>
                         </div>
 
-                        <div class="accordion-item">
-                          <div class="accordion-checkbox">
+                        <div className="accordion-item">
+                          <div className="accordion-checkbox">
                             <input type="checkbox" id="3" />
                             <label for="3"> 참여 로드맵 </label>
                           </div>
@@ -156,8 +152,8 @@ const Roadmap = (props) => {
                     </div>
                   </div>
 
-                  {/* <a href="#" class="filter-reset">
-                  <span class="icon">
+                  {/* <a href="#" className="filter-reset">
+                  <span className="icon">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 512 512"
@@ -172,9 +168,9 @@ const Roadmap = (props) => {
                 </a> */}
                 </div>
               </div>
-              <div class="panel-right">
-                <div class="panel-right-container">
-                  <div class="cards-container">
+              <div className="panel-right">
+                <div className="panel-right-container">
+                  <div className="cards-container">
                     <RoadmapCard imgUrl={''} content={''} author={''}/>
                     <RoadmapCard />
                     <RoadmapCard />
@@ -195,18 +191,18 @@ const Roadmap = (props) => {
                     <RoadmapCard />
                   </div>
 
-                  {/* <div class="panel-pagination">
-                    <ul class="pagination-cover">
-                      <a href="/roadmap" class="is-current">1</a>
+                  {/* <div className="panel-pagination">
+                    <ul className="pagination-cover">
+                      <a href="/roadmap" className="is-current">1</a>
                       <a href="#">2</a>
                       <a href="#">3</a>
                       <a href="#">4</a>
                       <a href="#">5</a>
                       <a href="#">6</a>
                       <a href="#">7</a>
-                      <a href="#" class="next">
+                      <a href="#" className="next">
                         <span>다음</span>
-                        <span class="icon">
+                        <span className="icon">
                           <svg
                             width="6"
                             xmlns="http://www.w3.org/2000/svg"
@@ -228,8 +224,6 @@ const Roadmap = (props) => {
           </div>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
