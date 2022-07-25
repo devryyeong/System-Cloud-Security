@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import RoadmapCard from '../components/RoadmapCard';
+import roadmapData from '../static/roadmap.json';
 import '../styles/roadmap.css';
 
 const Roadmap = (props) => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    setData(roadmapData.roadmap);
+
+    console.log(data);
+  }, []);
+
   return (
     <div>
       <main>
@@ -171,24 +181,17 @@ const Roadmap = (props) => {
               <div className="panel-right">
                 <div className="panel-right-container">
                   <div className="cards-container">
-                    <RoadmapCard imgUrl={''} content={''} author={''}/>
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
-                    <RoadmapCard />
+                    {/* data && data.map */}
+                    {data.length > 0 &&
+                      data.map((item) => {
+                        return (
+                          <RoadmapCard
+                            src={item.src}
+                            content={item.content}
+                            author={item.author}
+                          />
+                        );
+                      })}
                   </div>
 
                   {/* <div className="panel-pagination">

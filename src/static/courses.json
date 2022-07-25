@@ -1,5 +1,5 @@
 {
-  "courses" : [
+  "courses1" : [
     {
       "id": 0,
       "src": "https://cdn.inflearn.com/public/course-325982-cover/8b120ba4-43ce-4e16-b26e-53d3231867d2",
@@ -7,6 +7,80 @@
       "instructor": "코딩웍스(Coding Works)",
       "price": "₩35,200",
       "tags": "+300명"
+    },
+    {
+      "id": 1,
+      "src": "https://cdn.inflearn.com/public/courses/327403/cover/1481786d-7831-4f89-9c8a-2ac6d866e21e/327403-eng-resize.png",
+      "title": "Nuxt.js 시작하기",
+      "instructor": "장기효(캡틴판교)",
+      "price": "₩55,000",
+      "tags": "+800명"
+    },
+    {
+      "id": 2,
+      "src": "https://cdn.inflearn.com/public/courses/327964/cover/40046314-de00-4fdd-b0d4-e9887943c299/327964-eng.jpg",
+      "title": "Python을 이용한 개인화 추천시스템",
+      "instructor": "거친코딩",
+      "price": "₩13,000",
+      "tags": "+200명"
+    },
+    {
+      "id": 3,
+      "src": "https://cdn.inflearn.com/public/courses/326004/cover/54347b92-0d8c-4d53-81d4-736097149f97",
+      "title": "8명의 비전공자는 어떻게 개발자로 취업했을까",
+      "instructor": "앨런(Allen)",
+      "price": "₩20,000",
+      "tags": "+600명"
+    },
+    {
+      "id": 4,
+      "src": "https://cdn.inflearn.com/public/courses/326174/cover/b0536120-7de3-4aa8-8266-97cf3881e87d",
+      "title": "비전공자를 위한 진짜 입문 올인원 개발 클래스",
+      "instructor": "그랩",
+      "price": "₩49,500",
+      "tags": "+500명"
+    }
+  ],
+  "courses2": [
+    {
+      "id": 5,
+      "src": "https://cdn.inflearn.com/public/courses/328753/cover/0c368e07-0353-4167-a4cb-56726d49218e/커버.png",
+      "title": "호돌맨의 요절복통 개발쇼 (SpringBoot, Vue.JS, AWS)",
+      "instructor": "호돌맨",
+      "price": "₩86,900",
+      "tags": "+500명"
+    },
+    {
+      "id": 6,
+      "src": "https://cdn.inflearn.com/public/courses/328721/cover/d924844a-dfab-4906-8d26-701a1ca9fc11/328721-eng.png",
+      "title": "비전공자를 위한 풀스택 맛집지도 만들기 프로젝트!",
+      "instructor": "Jiwoon Jeong",
+      "price": "₩77,000",
+      "tags": "+200명"
+    },
+    {
+      "id": 7,
+      "src": "https://cdn.inflearn.com/public/courses/326368/cover/7b26110e-1eab-4ab6-8d9c-82381a5afd3d/KakaoTalk_Photo_2021-05-26-22-29-45.jpeg",
+      "title": "mongoDB 기초부터 실무까지(feat. Node.js)",
+      "instructor": "김시훈",
+      "price": "₩57,750",
+      "tags": "+800명"
+    },
+    {
+      "id": 8,
+      "src": "https://cdn.inflearn.com/public/course-325915-cover/c5c876a5-048f-49ce-b459-f1339432a43e",
+      "title": "[리뉴얼] 스스로 구축하는 AWS 클라우드 인프라 - 기본편",
+      "instructor": "노마드 콘텐츠 랩",
+      "price": "₩44,000",
+      "tags": "+1000명"
+    },
+    {
+      "id": 9,
+      "src": "https://cdn.inflearn.com/public/courses/326317/cover/b07dfd4a-a0c8-4fc5-a885-40c5cbb5e325/doitdj.png",
+      "title": "Do It! 장고+부트스트랩: 파이썬 웹개발의 정석",
+      "instructor": "SungYong Lee",
+      "price": "₩132,000",
+      "tags": "+200명"
     }
   ]
 }

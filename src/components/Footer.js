@@ -82,7 +82,7 @@ const Footer = () => {
                 <br />
                 <span>통신판매업: 2018-성남분당B-0062 | </span>
                 <span>개인정보보호책임자: 구자유 | </span>
-                <span>이메일: <a href="mailto:info@inflearn.com">info@inflearn.com</a></span>
+                <span>이메일: <a href="mailto:thisisme20@daum.net">info@inflearn.com</a></span>
                 <br />
                 <span>주소: 경기도 성남시 분당구 대왕판교로 660 유스페이스1 301-1호</span>
               </div>

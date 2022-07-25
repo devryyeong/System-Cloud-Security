@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useRecoilValue } from 'recoil';
 import '../styles/signup.css';
+import nickNameState from '../recoil/User';
 
 const Signup = () => {
+  // const [nickName, setNickName] = useState("");
+  const nickName = useRecoilValue(nickNameState);
+
   return (
     <div>
       <main>
         <section className="signup">
           <h2 className="signup-title">회원가입</h2>
+          {/* 넣어준걸 불러오기 */}
+          <div>{nickName}님 하이</div>
 
           <div className="signup-messages">
             <div className="swiper-container">
@@ -188,6 +196,6 @@ const Signup = () => {
       </main>
     </div>
   );
-}
+};
 
 export default Signup;

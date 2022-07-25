@@ -1,7 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { useRecoilState } from 'recoil';
+import nickNameState from '../recoil/User';
 
 const SearchBar = () => {
+  const navigate = useNavigate();
+
+  const [nickName, setNickName] = useRecoilState(nickNameState);
+  const [isValue, setIsValue] = useState(true);
+
+  const onClickConfirm = () => {
+    navigate('/signup');
+  }
+
+  const onChangeId = (e) => {
+    const id = e.target.value;
+
+    if(id.length < 5){
+      setIsValue(false);
+    } else {
+      setIsValue(true);
+    }
+  }
   return (
     <div>
       {/* 검색창 */}
@@ -13,9 +35,13 @@ const SearchBar = () => {
               <input
                 type="text"
                 placeholder="배우고 싶은 지식을 입력해보세요."
+                value={nickName}
+                onChange={(e) => {
+                  setNickName(e.target.value);
+                }}
               />
 
-              <span className="search-submit icon">
+              <span className="search-submit icon" onClick={onClickConfirm}>
                 <i className="fas fa-search"></i>
               </span>
             </div>
@@ -23,7 +49,7 @@ const SearchBar = () => {
         </div>
       </section>
 
-    {/* 인기태그 */}
+      {/* 인기태그 */}
       <section className="popular-tags">
         <ul className="container popular-tags__wrapper">
           <li className="popular-tags__tag-item">
