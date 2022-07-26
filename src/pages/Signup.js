@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useRecoilValue } from 'recoil';
 import '../styles/signup.css';
 import nickNameState from '../recoil/User';
@@ -7,6 +7,7 @@ import nickNameState from '../recoil/User';
 const Signup = () => {
   // const [nickName, setNickName] = useState("");
   const nickName = useRecoilValue(nickNameState);
+  const { params } = useParams();
 
   return (
     <div>

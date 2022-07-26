@@ -7,6 +7,7 @@ import Signup from '../pages/Signup';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import NotFound from '../pages/NotFound';
+import Detail from '../components/Detail';
 
 const RootRoute = () => {
   return (
@@ -18,6 +19,7 @@ const RootRoute = () => {
           <Route path="/" element={<Main />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/course/:name" element={<Detail />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
